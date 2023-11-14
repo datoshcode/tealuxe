@@ -1,0 +1,35 @@
+// SCSS variables
+
+// Colors
+$light-green: #B8B58B;
+$default: #151618;
+$ligth-bg: #F7F2EA;
+$white: #FFF;
+
+// Fonts
+// @include opensans-400;
+@mixin cormorant-300 {
+  font-family: "Cormorant-Light", serif;
+}
+@mixin cormorant-300-it {
+  font-family: "Cormorant-LightItalic", serif;
+}
+@mixin cormorant-400 {
+  font-family: "Cormorant-Regular", serif;
+}
+@mixin opensans-300 {
+  font-family: "OpenSans-Light", sans-serif;
+}
+@mixin opensans-300-it {
+  font-family: "OpenSans-LightItalic", sans-serif;
+}
+@mixin opensans-400 {
+  font-family: "OpenSans-Regular", sans-serif;
+}
+@mixin opensans-600 {
+  font-family: "OpenSans-Bold", sans-serif;
+}
+
+
+
+
