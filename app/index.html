@@ -7,33 +7,99 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+    <!-- .menu--close - It's decorative shadow under the menu list of the mobile version -->
+    <div class="menu--close"></div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <a class="logo" arial-label="logo" href="#">
-            <img src="images/logo.svg" alt="TealuxE logo" />
+            <img class="logo__img" src="images/logo.svg" alt="TealuxE logo" />
           </a>
 
           <!-- Navigation menu -->
           <nav class="menu">
+            <!-- Menu button for mobile devices -->
+            <button class="menu__btn">
+              <img
+                class="menu__btn-img"
+                src="images/menu-btn.svg"
+                alt="Button for mobile devices"
+              />
+            </button>
+
             <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="#">Black</a>
+              <li class="menu__close">
+                <button class="menu__close-btn">
+                  <img src="images/close-btn.svg" alt="close" />
+                </button>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Green</a>
+                <a class="menu__link" arial-label="Black tea" href="#">Black</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">White</a>
+                <a class="menu__link" arial-label="Green tea" href="#">Green</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Oolong</a>
+                <a class="menu__link" arial-label="White tea" href="#">White</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Pu-erh</a>
+                <a class="menu__link" arial-label="Oolong tea tea" href="#"
+                  >Oolong</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" arial-label="Pu-erh tea" href="#"
+                  >Pu-erh</a
+                >
+              </li>
+              <li class="mobile-nav">
+                <ul class="mobile-menu">
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" arial-label="Contact" href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" arial-label="Blog" href="#"
+                      >Our Blog</a
+                    >
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a
+                      class="mobile-menu__link"
+                      arial-label="Shipping and Delivery"
+                      href="#"
+                      >Shipping and Delivery</a
+                    >
+                  </li>
+                </ul>
+                <ul class="mobile-actions">
+                  <li class="mobile-actions__item">
+                    <a class="mobile-action__link" arial-label="cart" href="#">
+                      <img src="images/cart.svg" alt="cart" />
+                    </a>
+                  </li>
+                  <!-- User -->
+                  <li class="mobile-actions__item">
+                    <a class="mobile-action__link" arial-label="user" href="#">
+                      <img src="images/user.svg" alt="user" />
+                    </a>
+                  </li>
+                  <!-- Search -->
+                  <li class="mobile-actions__item">
+                    <a
+                      class="mobile-action__link"
+                      arial-label="Мagnifying glass"
+                      href="#"
+                    >
+                      <img src="images/search.svg" alt="Мagnifying glass" />
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
+          <!-- END/ Navigation menu -->
 
           <!-- User actions -->
           <ul class="user-actions">
@@ -66,13 +132,15 @@
               </search> -->
             </li>
           </ul>
+          <!--END/ User actions -->
         </div>
       </div>
     </header>
 
-    <main class="main">
+
+ <main class="main">
       <!-- Sestion Top -->
-      <section class="top">
+      <section class="top" style="background-image: url(images/top-bg.webp)">
         <div class="container">
           <div class="top__inner">
             <h1 class="top__title">
@@ -85,32 +153,36 @@
           </div>
         </div>
       </section>
-      <blockquote class="blockquote">
-        <p class="blockquote__text">
-          "Tea is not just a drink, it's a way of life and a way to connect with
-          our loved ones."
-        </p>
-      </blockquote>
+      <!-- END/ Sestion Top -->
+
+      <!-- Blockquote -->
+      <div class="blockquote__section">
+        <div class="container">
+          <blockquote class="blockquote">
+            <p class="blockquote__text">
+              "Tea is not just a drink, it's a way of life and a way to connect
+              with our loved ones."
+            </p>
+          </blockquote>
+        </div>
+      </div>
+      <!-- END/ Blockquote -->
     </main>
-  </body>
-</html>
 
-
-<main class="main">
-
-
-  
-
-</main>
 
   <footer class="footer">
 
+
     
+
 
   </footer>
 
+
   <script src="js/main.min.js"></script>
 
+
   </body>
+
 
 </html>
