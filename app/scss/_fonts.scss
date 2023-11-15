@@ -1,0 +1,84 @@
+// Cormorant-Light
+@font-face {
+    font-family: "Cormorant-Light";
+    font-weight: 300;
+    font-style: normal;
+    src:
+        local("Cormorant-Light"),
+        url("../fonts/Cormorant-Light.woff2") format("woff2"),
+        url("../fonts/Cormorant-Light.woff") format("woff");
+    font-display: swap;
+}
+
+// Cormorant-LightItalic
+@font-face {
+    font-family: "Cormorant-LightItalic";
+    font-weight: 300;
+    font-style: italic;
+    src:
+        local("Cormorant-LightItalic"),
+        url("../fonts/Cormorant-LightItalic.woff2") format("woff2"),
+        url("../fonts/Cormorant-LightItalic.woff") format("woff");
+    font-display: swap;
+}
+
+// Cormorant-Regular
+@font-face {
+    font-family: "Cormorant-Regular";
+    font-weight: 400;
+    font-style: normal;
+    src:
+        local("Cormorant-Regular"),
+        url("../fonts/Cormorant-Regular.woff2") format("woff2"),
+        url("../fonts/Cormorant-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+// OpenSans-Light
+@font-face {
+    font-family: "OpenSans-Light";
+    font-weight: 300;
+    font-style: normal;
+    src:
+        local("OpenSans-Light"),
+        url("../fonts/OpenSans-Light.woff2") format("woff2"),
+        url("../fonts/OpenSans-Light.woff") format("woff");
+    font-display: swap;
+}
+
+
+// OpenSans-LightItalic.ttf
+@font-face {
+    font-family: "OpenSans-LightItalic";
+    font-weight: 300;
+    font-style: italic;
+    src:
+        local("OpenSans-LightItalic"),
+        url("../fonts/OpenSans-LightItalic.woff2") format("woff2"),
+        url("../fonts/OpenSans-LightItalic.woff") format("woff");
+    font-display: swap;
+}
+
+// OpenSans-Regular
+@font-face {
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+    font-style: normal;
+    src:
+        local("OpenSans-Regular"),
+        url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("../fonts/OpenSans-Regular.woff") format("woff");
+    font-display: swap;
+}
+
+// OpenSans-Bold
+@font-face {
+    font-family: "OpenSans-Bold";
+    font-weight: 600;
+    font-style: normal;
+    src:
+        local("OpenSans-Bold"),
+        url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("../fonts/OpenSans-Bold.woff") format("woff");
+    font-display: swap;
+}
