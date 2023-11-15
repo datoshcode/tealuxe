@@ -36,4 +36,42 @@
     }
 }
 
+.top {
+    background-image: url(../images/top-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    &__inner {
+        min-height: 500px;
+        @include cormorant-400;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__title {
+        font-size: 3.75rem;
+        line-height: 1;
+        margin-bottom: 1.25rem;
+        max-width: 830px;
+    }
+    &__text {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        max-width: 565px;
+        line-height: normal;
+    }
+}
+
+.blockquote {
+    &__text {
+    @include cormorant-300-it;
+    font-size: 2.5rem;
+    line-height: normal;
+    text-align: center;
+    max-width: 704px;
+    margin: 150px auto;
+    }
+}
+
 @import "media";
