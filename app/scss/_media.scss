@@ -24,16 +24,23 @@
    }
    .blockquote {
       &__text {
-         margin-top: 120px;
-         margin-bottom: 135px;
+         margin-top: 7.5rem;
+         margin-bottom: 8.4375rem;
       }
    }
    .assortment {
-      margin-bottom: 120px;
-    &__list {
-        gap: 0;
-    }
-}
+      margin-bottom: 7.5rem;
+      &__list {
+         gap: 0;
+      }
+   }
+
+   .title {
+      margin-bottom: 1.875rem;
+   }
+   .reviews__item:last-child {
+      display: none;
+   }
 }
 
 // max-width: 860px
@@ -49,8 +56,8 @@
 @media (max-width: 768px) {
    .header {
       &__inner {
-         padding-right: 64px;
-         padding-left: 64px;
+         padding-right: 4rem;
+         padding-left: 4rem;
       }
    }
    .menu {
@@ -68,7 +75,7 @@
          display: block;
          text-align: center;
          padding-top: 3.75rem;
-         transition: transform .7s ease;
+         transition: transform 0.7s ease;
       }
 
       &__btn {
@@ -109,7 +116,7 @@
          @include opensans-300;
          font-size: 0.8125rem;
          line-height: normal;
-         margin-bottom: 35px;
+         margin-bottom: 2.1875rem;
       }
    }
 
@@ -129,17 +136,26 @@
 
    .assortment {
       margin-bottom: 120px;
-    &__list {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
+      &__list {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+   }
+   .reviews {
+      &__list {
+         flex-wrap: wrap;
+         gap: 1.875rem 4.75rem;
+      }
+      &__item:last-child {
+         display: block;
+      }
+   }
 }
 
 // max-width: 680px
 @media (max-width: 680px) {
    .container {
-      padding: 0 10px;
+      padding: 0 0.625rem;
    }
    .header {
       &__inner {
@@ -149,16 +165,33 @@
    }
    .top {
       &__title {
-         font-size: 40px;
+         font-size: 2.5rem;
          line-height: normal;
       }
    }
    .blockquote {
       &__text {
-         font-size: 30px;
+         font-size: 1.875rem;
          max-width: 33.75rem;
-         margin-top: 60px;
-         margin-bottom: 60px;
+         margin-top: 3.75rem;
+         margin-bottom: 3.75rem;
+      }
+   }
+   .reviews {
+      &__item {
+        flex-basis: 220px;
+      }
+      &__list {
+         gap: 1.875rem 3.75rem;
+      }
+   }
+}
+
+// max-width: 520px
+@media (max-width: 520px) {
+    .reviews {
+      &__list {
+         gap: 1.875rem 20px;
       }
    }
 }
@@ -167,7 +200,7 @@
 @media (max-width: 480px) {
    .blockquote {
       &__text {
-         font-size: 16px;
+         font-size: 1rem;
          max-width: 23.5rem;
       }
    }
@@ -178,10 +211,20 @@
    }
 
    .assortment {
-    &__img {
-        max-width: 170px;
-        width: 100%;
-    }
+      &__img {
+         max-width: 170px;
+         width: 100%;
+      }
+   }
+   .assortment {
+      margin-bottom: 3.75rem;
+   }
+
+   .title {
+      margin-bottom: 3.125rem;
+   }
+   .reviews {
+      padding: 3.125rem 0;
    }
 }
 
@@ -189,11 +232,11 @@
 @media (max-width: 360px) {
    .header {
       &__inner {
-         padding: 10px 0;
+         padding: 0.625rem 0;
       }
    }
    .logo {
-      margin-right: 50px;
+      margin-right: 3.125rem;
    }
 
    .user-actions {
@@ -203,11 +246,11 @@
    }
    .top {
       &__inner {
-         min-height: 22.9375rem;
+         min-height: 367px;
       }
       &__title {
-         font-size: 24px;
-         margin-bottom: 10px;
+         font-size: 1.75rem;
+         margin-bottom: 0.625rem;
       }
       &__text {
          font-size: 13px;
@@ -226,5 +269,21 @@
          width: 100%;
       }
    }
-}
+   .assortment {
+      margin-bottom: 5rem;
+   }
 
+   .title {
+      font-size: 1.5rem;
+      margin-bottom: 1.875rem;
+   }
+   // Hides even comments. With a size of 360px you only need to leave 2 comments
+   .reviews {
+      &__item {
+         flex-basis: 100%;
+      }
+      &__item:nth-child(even) {
+         display: none;
+      }
+   }
+}

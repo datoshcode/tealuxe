@@ -106,7 +106,6 @@
         text-align: center;
         display: flex;
         gap: 0 2.5rem;
-        margin-top: 3.75rem;
     }
     &__img {
         max-width: 208px;
@@ -119,5 +118,28 @@
         padding-top: 0.625rem;
     }
 }
+
+.reviews {
+    background-color: $ligth-bg;
+    padding: 3.75rem 0;
+    &__list {
+        display: flex;
+        gap: 0 1.625rem;
+        justify-content: center;
+    }
+    &__item {
+        flex-basis: 280px;
+    }
+    &__text {
+        @include opensans-300-it;
+        font-size: 1rem;
+        line-height: normal;
+    }
+    &__name {
+        @include opensans-600;
+        font-size: 1.25rem;
+    }
+}
+
 
 @import "media";
