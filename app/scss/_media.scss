@@ -28,6 +28,12 @@
          margin-bottom: 135px;
       }
    }
+   .assortment {
+      margin-bottom: 120px;
+    &__list {
+        gap: 0;
+    }
+}
 }
 
 // max-width: 860px
@@ -120,6 +126,14 @@
    .menu__close {
       display: block;
    }
+
+   .assortment {
+      margin-bottom: 120px;
+    &__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
 }
 
 // max-width: 680px
@@ -161,6 +175,13 @@
       &__img {
          width: 2.5rem;
       }
+   }
+
+   .assortment {
+    &__img {
+        max-width: 170px;
+        width: 100%;
+    }
    }
 }
 
@@ -206,3 +227,4 @@
       }
    }
 }
+
