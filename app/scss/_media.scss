@@ -111,17 +111,16 @@
    .mobile-menu {
       padding-top: 3.75rem;
       margin: 3.75rem 1.875rem;
-      border-top: 2px solid $ligth-bg;
+      border-top: 2px solid $light-bg;
       &__item {
          @include opensans-300;
          font-size: 0.8125rem;
-         line-height: normal;
          margin-bottom: 2.1875rem;
       }
    }
 
    .mobile-actions {
-      background-color: $ligth-bg;
+      background-color: $light-bg;
       height: 60px;
       padding: 0 5rem;
       display: flex;
@@ -166,7 +165,6 @@
    .top {
       &__title {
          font-size: 2.5rem;
-         line-height: normal;
       }
    }
    .blockquote {
