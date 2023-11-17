@@ -28,5 +28,11 @@
     margin-bottom: 3.75rem;
  }
 
+ .footer__title {
+    @include cormorant-400;
+    font-size: 1.5rem;
+    margin-bottom: 3.125rem;
+ }
+
 
 

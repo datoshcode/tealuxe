@@ -243,7 +243,7 @@
     &__btn {
         font-size: 1.25rem;
         background-color: $white;
-        padding: .75rem 2.5625rem;
+        padding: 0.75rem 2.5625rem;
         border: 1px solid $default;
         cursor: pointer;
     }
@@ -267,7 +267,7 @@
         margin-top: 5px;
     }
     &__text {
-        font-size: .8125rem;
+        font-size: 0.8125rem;
         padding-left: 20px;
     }
 }
@@ -299,6 +299,112 @@
         font-size: 1.1875rem;
         margin-bottom: 1.875rem;
     }
+}
+
+.footer {
+    padding: 100px 0 20px;
+    background-color: $light-bg;
+}
+
+.footer-top {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 40px;
+    &__products-item,
+    &__company-item {
+        margin-bottom: 20px;
+    }
+    &__products-link,
+    &__company-link {
+        font-size: 1rem;
+    }
+    &__blockquote {
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    &__blockquote-text {
+        @include opensans-300-it;
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+    &__blockquote-author {
+        @include opensans-300;
+        font-size: 12px;
+    }
+}
+
+.footer-contacts {
+    &__text {
+        font-size: .8125rem;
+        margin-bottom: 20px;
+    }
+    &__nav-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__nav {
+        margin-top: 20px;
+    }
+    &__logo {
+        margin-right: 40px;
+    }
+    &__nav-phone,
+    &__nav-email {
+        font-size: 13px;
+        position: relative;
+        padding-left: 32px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__nav-phone::before,
+    &__nav-email::before {
+        position: absolute;
+        content: "";
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+    }
+      &__nav-phone::before {
+        background-image: url(../images/phone.svg);
+        width: 21px;
+        height: 21px;
+      }
+    &__nav-email::before {
+        background-image: url(../images/email.svg);
+        width: 22px;
+        height: 16px;
+    }
+    &__social {
+     margin-top: 40px;
+     margin-left: 97px;
+    }
+    &__social-list {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+    }
+    &__social-link {
+        display: grid;
+    }
+}
+
+.footer-bootom {
+    display: flex;
+    &__copy {
+        margin-right: 192px;
+        font-size: 1rem;
+    }
+    &__partners {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+    }
+}
+
+.partners-img-fix {
+    display: flex;
+    margin-top: 4px;
 }
 
 @import "media";
