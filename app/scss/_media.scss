@@ -1,16 +1,541 @@
 // Styles for adaptive
 
-/*
-.section_1,
-.section_2,
-.section_3,  {
-   display: none;
-*/ 
-
-
-// 1300px
-/*
-@media (max-width: 1300px) {
-
+@media (max-width: 1184px) {
+   .main-blog {
+      &__list {
+         gap: 20px 60px;
+      }
+      &__item-img {
+         width: 230px;
+         height: 153px;
+      }
+      &__item {
+         flex-basis: 460px;
+      }
+   }
 }
-*/
+
+// max-width: 1000 px
+@media (max-width: 1000px) {
+   .header {
+      &__inner {
+         min-height: auto;
+      }
+   }
+   .logo {
+      margin-bottom: 0;
+   }
+   .menu {
+      margin-right: auto;
+      &__list {
+         margin-left: 3.75rem;
+      }
+   }
+   .user-actions__item-search {
+      margin-left: 1.875rem;
+   }
+   .top {
+      background-position: bottom left;
+   }
+   .blockquote {
+      &__text {
+         margin-top: 7.5rem;
+         margin-bottom: 8.4375rem;
+      }
+   }
+   .assortment {
+      margin-bottom: 7.5rem;
+      &__list {
+         gap: 0;
+      }
+   }
+
+   .title {
+      margin-bottom: 3.75rem;
+   }
+   .reviews__item:last-child {
+      display: none;
+   }
+
+   .main-blog {
+      padding: 120px 0;
+   }
+
+   .main-blog {
+      &__list {
+         gap: 60px 20px;
+      }
+   }
+
+   .mailing-list {
+      &__inner {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &__text,
+      &__title {
+         text-align: center;
+      }
+      &__text {
+         flex-basis: 780px;
+      }
+   }
+
+   .prioritise {
+      padding: 120px 0;
+      &__list {
+         gap: 30px 210px;
+      }
+   }
+
+   .footer-top {
+      margin-bottom: 55px;
+      &__blockquote {
+         width: 270px;
+      }
+      &__blockquote-text {
+         margin-top: 0;
+      }
+   }
+
+   .footer-contacts {
+      width: 270px;
+   }
+
+   .footer-bootom {
+      &__copy {
+         margin-right: 85px;
+      }
+   }
+}
+
+// max-width: 860px
+@media (max-width: 860px) {
+   .menu {
+      &__list {
+         gap: 0 45px;
+      }
+   }
+}
+
+// max-width: 768px
+@media (max-width: 768px) {
+   .header {
+      &__inner {
+         padding-right: 4rem;
+         padding-left: 4rem;
+      }
+   }
+   .menu {
+      order: -1;
+      margin-right: 0;
+      &__list {
+         transform: translateY(-100%);
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         width: 80%;
+         margin: 0 auto;
+         background-color: $white;
+         display: block;
+         text-align: center;
+         padding-top: 3.75rem;
+         transition: transform 0.7s ease;
+      }
+
+      &__btn {
+         border: none;
+         display: block;
+      }
+      &__btn-img {
+         object-fit: cover;
+      }
+      &__close-btn {
+         position: absolute;
+         top: 1.25rem;
+         right: 1.25rem;
+      }
+      &__item {
+         margin-bottom: 1.875rem;
+         font-size: 1.5rem;
+         @include cormorant-400;
+      }
+
+      .menu__list.menu__list--open {
+         transform: translateY(0%);
+      }
+   }
+   .logo {
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .blockquote__text {
+      max-width: 40rem;
+   }
+
+   .mobile-menu {
+      padding-top: 3.75rem;
+      margin: 3.75rem 1.875rem;
+      border-top: 2px solid $light-bg;
+      &__item {
+         @include opensans-300;
+         font-size: 0.8125rem;
+         margin-bottom: 2.1875rem;
+      }
+   }
+
+   .mobile-actions {
+      background-color: $light-bg;
+      height: 60px;
+      padding: 0 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .mobile-nav,
+   .menu__close {
+      display: block;
+   }
+
+   .assortment {
+      margin-bottom: 120px;
+      &__list {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+   }
+   .reviews {
+      &__list {
+         flex-wrap: wrap;
+         gap: 1.875rem 4.75rem;
+      }
+      &__item:last-child {
+         display: block;
+      }
+   }
+
+   .main-blog {
+      &__item {
+         flex-basis: 542px;
+      }
+      &__item-img {
+         max-width: 270px;
+      }
+      &__list {
+         gap: 30px 20px;
+      }
+      &__item:nth-child(even) {
+         margin-left: 98px;
+      }
+   }
+
+   .mailing-list {
+      &__text {
+         flex-basis: 640px;
+      }
+   }
+
+   .prioritise {
+      &__list {
+         gap: 30px 133px;
+      }
+   }
+
+   .footer-top {
+      grid-template-columns: repeat(3, 1fr);
+      &__products,
+      &__company {
+         grid-row: span 3;
+      }
+      &__blockquote {
+         margin-top: 0;
+         margin-bottom: 40px;
+      }
+   }
+
+   .footer-contacts {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+   }
+
+   .footer-bootom__copy {
+      margin-right: 120px;
+   }
+}
+
+// max-width: 680px
+@media (max-width: 680px) {
+   .container {
+      padding: 0 0.625rem;
+   }
+   .header {
+      &__inner {
+         padding-left: 0;
+         padding-right: 0;
+      }
+   }
+   .top {
+      &__title {
+         font-size: 2.5rem;
+      }
+   }
+   .blockquote {
+      &__text {
+         font-size: 1.875rem;
+         max-width: 33.75rem;
+         margin-top: 3.75rem;
+         margin-bottom: 3.75rem;
+      }
+   }
+   .reviews {
+      &__item {
+         flex-basis: 220px;
+      }
+      &__list {
+         gap: 1.875rem 3.75rem;
+      }
+   }
+   .main-blog {
+      &__item:nth-child(even) {
+         margin-left: 0;
+      }
+   }
+}
+
+// max-width: 520px
+@media (max-width: 520px) {
+   .reviews {
+      &__list {
+         gap: 1.875rem 20px;
+      }
+   }
+}
+
+// max-width: 480px
+@media (max-width: 480px) {
+   .blockquote {
+      &__text {
+         font-size: 1rem;
+         max-width: 23.5rem;
+      }
+   }
+   .logo {
+      &__img {
+         width: 2.5rem;
+      }
+   }
+
+   .assortment {
+      &__img {
+         max-width: 170px;
+         width: 100%;
+      }
+   }
+   .assortment {
+      margin-bottom: 3.75rem;
+   }
+
+   .title {
+      margin-bottom: 3.125rem;
+   }
+   .reviews {
+      padding: 3.125rem 0;
+   }
+   .main-blog {
+      padding: 60px 0;
+      &__item-img {
+         max-width: 230px;
+      }
+   }
+   .mailing-list {
+      padding: 50px 0;
+      &__text {
+         flex-basis: 100%;
+         font-size: 13px;
+      }
+      &__inner {
+         gap: 30px 0;
+      }
+      &__email {
+         width: 324px;
+         margin-right: 20px;
+      }
+      &__btn {
+         padding: 12px 36px;
+      }
+   }
+   .prioritise {
+      padding: 60px 0;
+   }
+
+   .footer {
+      padding: 50px 0 10px;
+   }
+
+   .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      &__blockquote {
+         width: 100%;
+      }
+      &__blockquote-text {
+         margin-bottom: 10px;
+         margin-top: 50px;
+      }
+      &__products {
+         margin-right: auto;
+         padding-right: 20px;
+      }
+      &__company {
+         padding-right: 20px;
+         margin-right: 55px;
+      }
+   }
+
+   .footer__title {
+      margin-bottom: 30px;
+   }
+
+   .footer-contacts {
+      width: 100%;
+      margin-top: 50px;
+      &__title {
+         margin-bottom: 20px;
+         text-align: center;
+      }
+      &__text {
+         text-align: center;
+      }
+      &__nav-list {
+         flex-wrap: nowrap;
+      }
+      &__social {
+         margin-left: 30px;
+      }
+   }
+
+   .footer-bootom__copy {
+      margin-right: auto;
+   }
+}
+
+// max-width: 360px
+@media (max-width: 360px) {
+   .header {
+      &__inner {
+         padding: 0.625rem 0;
+      }
+   }
+   .logo {
+      margin-right: 3.125rem;
+   }
+
+   .user-actions {
+      &__item-search {
+         margin-left: 0;
+      }
+   }
+   .top {
+      &__inner {
+         min-height: 367px;
+      }
+      &__title {
+         font-size: 1.75rem;
+         margin-bottom: 0.625rem;
+      }
+      &__text {
+         font-size: 13px;
+         margin-bottom: 30px;
+      }
+   }
+   .blockquote {
+      &__text {
+         max-width: 21.25rem;
+         margin-top: 4.375rem;
+         margin-bottom: 5rem;
+      }
+   }
+   .menu {
+      &__list {
+         width: 100%;
+      }
+   }
+   .assortment {
+      margin-bottom: 5rem;
+   }
+
+   .title {
+      font-size: 1.5rem;
+      margin-bottom: 1.875rem;
+   }
+   // Hides even comments. With a size of 360px you only need to leave 2 comments
+   .reviews {
+      &__item {
+         flex-basis: 100%;
+      }
+      &__item:nth-child(even) {
+         display: none;
+      }
+   }
+   .main-blog {
+      padding: 50px 0;
+      &__list {
+         justify-content: center;
+      }
+      &__item {
+         display: block;
+         max-width: 270px;
+      }
+      &__item-img {
+         max-width: 270px;
+         width: 100%;
+      }
+      &__item:nth-child(even) {
+         display: none;
+      }
+      &__item-title {
+         min-height: auto;
+      }
+   }
+   .mailing-list {
+      &__email {
+         width: 205px;
+      }
+   }
+
+   .prioritise {
+      padding: 50px 0;
+      &__item-title {
+         font-size: 20px;
+         padding-bottom: 10px;
+      }
+      &__text {
+         @include opensans-400;
+         font-size: 10px;
+         text-transform: uppercase;
+      }
+      &__list {
+         gap: 40px 100px;
+      }
+   }
+
+   .footer-top {
+      &__company {
+         padding-right: 15px;
+         margin-right: 0;
+      }
+   }
+
+   .footer-contacts {
+      &__nav-list {
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+      &__social {
+         margin-right: auto;
+         margin-left: auto;
+      }
+   }
+}

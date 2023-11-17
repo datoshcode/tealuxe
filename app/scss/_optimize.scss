@@ -263,12 +263,7 @@ pre {
     overflow: auto;
     padding: 1.6em;
 }
-img,
-svg {
-    max-width: 100%;
-    height: auto;
-    border-style: none;
-}
+
 figure {
     margin: 1em 0;
 }
@@ -436,3 +431,4 @@ ul ul {
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
+
