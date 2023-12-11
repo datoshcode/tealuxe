@@ -1,4 +1,4 @@
-# tealuxe-project-src
+# tealuxe-front-project-src
 
 <p>The repository contains site source files generated using Gulp.</p>
 <p>Website development based on a layout to improve your web development skills.</p>
